@@ -180,6 +180,8 @@ buildnc() {
 	# try to build the package
 	local mesg="Attempting to build package..."
 	echo -e "${YELLOW}---->${ALL_OFF}${BOLD} ${mesg}${ALL_OFF}"
+	
+	[[ -d $CHROOTPATH64/ccm/startdir ]] && rm -rf $CHROOTPATH64/ccm/startdir/* > /dev/null
 
 	if [[ -z "$RUNNAMCAP" ]]; then
 		makechrootpkg -l ccm -u -r $CHROOTPATH64

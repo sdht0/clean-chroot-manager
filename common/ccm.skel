@@ -34,3 +34,8 @@ CFLAGS=""
 # Set this variable to anything if you want to run namcap on the built package
 # Leave it empty (default) if you do not want to run namcap
 RUNNAMCAP=
+
+# Optionally set these paths to separate build outputs to different folders
+# export PKGDEST=~/build/pkgfiles
+# export SRCDEST=~/build/sources
+# export LOGDEST=~/build/logs
